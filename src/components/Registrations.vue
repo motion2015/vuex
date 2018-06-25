@@ -26,10 +26,10 @@
         },
         computed: {
             registrations() {
-                return this.$store.state.registrations
+                return this.$store.getters.registrations;
             },
             total() {
-                return this.$store.state.registrations.length;
+                return this.$store.getters.totalRegistrations;
             }
         }
     }
